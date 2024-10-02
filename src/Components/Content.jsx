@@ -15,7 +15,7 @@ const Content = ({
     let height = document.forms[0].elements[0].value
     let weight = document.forms[0].elements[1].value
 
-    if(e.type == 'click' || e.key == 'Enter'){
+    if(e.type === 'click' || e.key === 'Enter'){
       if(height && weight){
         if(!isNaN(height) && !isNaN(weight)){
           let calculateBMI = Math.floor(weight / (height * 0.01)**2)
